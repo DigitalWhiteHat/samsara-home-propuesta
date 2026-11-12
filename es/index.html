@@ -185,7 +185,7 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
  .h-acc .h-cta{font-size:16px}
 }
 @media (max-width:859px){ .h-barra .h-wa-t{display:none} .h-barra .h-wa-c{width:52px;min-width:52px;padding:0!important;flex:none} }
-@media (max-width:339px){ .h-motivos{font-size:14px;gap:10px} .h-acc .h-cta{font-size:15px;padding-left:14px} .h-cta-t{gap:7px} }
+@media (max-width:339px){ .h-motivos{font-size:14px;gap:2px} .h-hero-t{gap:16px} .h-acc .h-cta{font-size:15px;padding-left:14px} .h-cta-t{gap:7px} }
 .h-wa{background:var(--wa);color:#fff;padding:0 14px}
 .h-capa{position:fixed;inset:0;z-index:40;background:rgba(22,22,29,.5);display:flex;align-items:flex-end;justify-content:center}
 .h-hoja{background:var(--blanco);width:100%;max-width:520px;border-radius:18px 18px 0 0;padding:18px max(16px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));max-height:86vh;overflow:auto}
@@ -210,12 +210,13 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 @media (max-width:859px){
  body{line-height:1.5}
  .h-hero .h-wrap{padding-block:30px 32px;gap:14px}
- .h-hero h1{line-height:1.12;max-width:none;text-wrap:wrap;font-size:min(30px,calc((100vw - 32px) / var(--h1-ancho,11.4)));margin-bottom:6px}
+ .h-hero h1{line-height:1.12;max-width:none;text-wrap:wrap;font-size:min(30px,calc((100vw - 32px) / var(--h1-ancho,11.4)));margin:0}
  .h-h1a,.h-h1b{display:block}
- .h-motivos{gap:12px;font-size:15px}
- .h-datos{margin-top:8px}
+ .h-hero-t{display:flex;flex-direction:column;gap:20px}
+ .h-motivos{gap:3px;font-size:15px;line-height:1.4}
+ .h-datos{margin:0}
  .h-datos span:not(.h-g){display:none}
- .h-acc{margin-top:6px}
+ .h-acc{margin:2px 0 0}
  .h-franja{padding-top:11px;padding-bottom:11px}
  .h-franja>span:last-child{background:none;color:var(--tinta);padding:0;font-size:20px;line-height:1}
  .h-franja>span:last-child{font-size:0} .h-franja>span:last-child::after{content:"›";font-size:26px;font-weight:700}
