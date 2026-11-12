@@ -199,6 +199,7 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 .h-ir[aria-disabled=true]{opacity:.45;pointer-events:none}
 .h-cerrar{float:right;border:0;background:none;font-size:24px;line-height:1;cursor:pointer;width:40px;height:40px;color:var(--tinta)}
 .h-links,.h-rapida,.h-solo-esc{display:none}
+.h-confia{display:none}
 .h-mas{display:inline-flex;margin-top:16px;font-weight:700;font-size:15px;color:var(--tinta);text-decoration:none;border-bottom:2px solid var(--oro);padding-bottom:2px}
 .h-faq-cta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 20px;margin-top:18px;padding:16px;border-radius:14px;background:var(--crema)}
 .h-faq-cta b{display:block} .h-faq-cta>span:first-child{font-size:14px;color:var(--suave)} .h-faq-cta b{color:var(--tinta);font-size:15px}
@@ -214,7 +215,9 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
  .h-h1a,.h-h1b{display:block}
  .h-hero-t{display:flex;flex-direction:column;gap:20px}
  .h-motivos{gap:3px;font-size:15px;line-height:1.4}
- .h-datos{margin:0}
+ .h-datos{display:none}
+ .h-confia{display:block;margin:-8px 0 0;font-size:13.5px;font-weight:600;color:#EFE7DC;text-align:center}
+ .h-confia b{color:var(--oro);letter-spacing:.02em}
  .h-datos span:not(.h-g){display:none}
  .h-acc{margin:2px 0 0}
  .h-franja{padding-top:11px;padding-bottom:11px}
@@ -288,6 +291,7 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 <ul class="h-motivos"><li>Artistas que diseñan según tu rostro</li><li>Con hilo: natural e ideal para piel sensible</li><li>Más de 10 años realzando miradas</li></ul>
 <div class="h-datos"><span class="h-g"><b>★ 4,5 a 4,8</b> · 485 reseñas en Google</span><span>Diseño de cejas 24 €</span><span>3 sedes</span></div>
 <div class="h-acc"><a class="h-btn h-btn-o h-cta" href="#sedes"><span class="h-cta-t"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar cita</span><span class="h-cta-f" aria-hidden="true">→</span></a><a class="h-btn h-btn-l h-wa-c" href="https://wa.me/34654332843" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg><span class="h-wa-t">WhatsApp</span></a></div>
+<p class="h-confia"><b>★ 4,5 a 4,8</b> · 485 reseñas en Google</p>
 </div><form class="h-rapida" id="rapida" aria-label="Reserva rápida"><b>¿Ya sabes lo que quieres?</b><span>Elige servicio y sede, y ve las horas libres.</span>
 <label>Servicio<select id="r-serv" required><option value="">Elige un servicio</option><optgroup label="Más pedidos"><option value="2">Diseño de cejas · 24 €</option><option value="3">Laminado de cejas · 40 €</option><option value="4">Lifting de pestañas · 42 €</option><option value="20">Labio superior · 13 €</option></optgroup><optgroup label="Cejas"><option value="31">Diseño + realce de color</option><option value="27">Diseño + labio superior</option><option value="17">Realce de color · 11 €</option><option value="13">Laminado + diseño · 64 €</option><option value="12">Laminado + diseño + realce · 75 €</option></optgroup><optgroup label="Pestañas"><option value="16">Lifting + efecto rímel</option><option value="19">Efecto rímel · 22 €</option><option value="36">Diseño de cejas + lifting</option></optgroup><optgroup label="Depilación facial"><option value="7">Cara completa · 62 €</option><option value="8">Mentón · 10 €</option><option value="9">Mejillas · 10 €</option><option value="10">Frente · 9 €</option><option value="11">Patillas · 9 €</option><option value="30">Orejas · 13 €</option><option value="29">Nariz · 10 €</option></optgroup><optgroup label="Nanopigmentación"><option value="32">Valoración para Nano Brows Pro</option></optgroup><optgroup label="Valoración"><option value="14">Valoración de cejas · Gratis</option></optgroup></select></label>
 <label>Sede<select id="r-sede" required><option value="">Elige una sede</option><option value="1">Plenilunio · San Blas-Canillejas</option><option value="3">Plaza Norte 2 · San Sebastián de los Reyes</option><option value="2">Gran Plaza 2 · Majadahonda</option></select></label>
