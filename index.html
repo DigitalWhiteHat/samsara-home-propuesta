@@ -207,6 +207,32 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 .h-cajon nav{position:absolute;top:0;right:0;bottom:0;width:min(320px,86vw);background:var(--blanco);padding:calc(16px + env(safe-area-inset-top,0px)) 20px 20px;display:flex;flex-direction:column;gap:2px;overflow:auto}
 .h-cajon a{padding:13px 0;border-bottom:1px solid var(--linea);text-decoration:none;font-weight:600}
 .h-cajon .h-btn{margin-top:14px}
+@media (max-width:859px){
+ body{line-height:1.5}
+ .h-hero .h-wrap{padding-block:30px 32px;gap:14px}
+ .h-hero h1{line-height:1.15}
+ .h-motivos{gap:7px}
+ .h-datos span:not(.h-g){display:none}
+ .h-acc{margin-top:6px}
+ .h-franja{padding-top:11px;padding-bottom:11px}
+ .h-franja>span:last-child{background:none;color:var(--tinta);padding:0;font-size:20px;line-height:1}
+ .h-franja>span:last-child{font-size:0} .h-franja>span:last-child::after{content:"›";font-size:26px;font-weight:700}
+ section{padding-block:38px}
+ h2{font-size:22px;margin-bottom:6px}
+ .h-sub{margin-bottom:18px}
+ .h-panel{gap:12px}
+ .h-card{padding:12px;gap:14px}
+ .h-tabs{margin-bottom:16px}
+ .h-val{margin-top:16px;padding:16px}
+ .h-aviso-s{padding-block:10px 26px}
+ .h-porque ul{gap:20px}
+ .h-resenas{gap:12px}
+ .h-res{padding:16px}
+ .h-sedes li{padding:18px 0}
+ .h-extras{gap:14px}
+ .sm-faq-i{padding:15px 0}
+ .h-mas{margin-top:22px}
+}
 @media (min-width:860px){
  body{padding-bottom:0;font-size:16px}
  .h-wrap{max-width:1180px}
