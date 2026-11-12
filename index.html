@@ -150,7 +150,11 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
  .h-hero h1{font-size:52px;max-width:15ch} .h-hero p{font-size:17px;max-width:46ch} .h-motivos{font-size:16.5px;gap:6px}
  .h-rapida{display:flex;flex-direction:column;gap:6px;background:var(--blanco);color:var(--tinta);border-radius:18px;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.25)}
  .h-rapida>b{font-size:19px} .h-rapida>span{color:var(--suave);font-size:14px;margin-bottom:8px}
- .h-rapida .h-todos{text-align:left;margin-top:12px}
+ .h-rapida .h-todos{text-align:center;margin-top:4px;font-size:14px}
+ .h-rapida label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:13px;margin-top:6px}
+ .h-rapida select{appearance:none;-webkit-appearance:none;width:100%;min-height:48px;padding:0 40px 0 14px;border:1px solid var(--linea);border-radius:12px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2316161D' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center;font:500 15px Montserrat,Arial,sans-serif;color:var(--tinta);cursor:pointer}
+ .h-rapida .h-ir{margin-top:14px;width:100%;min-height:50px;font-size:16px}
+ .h-hero .h-acc{display:none}
  section{padding-block:48px} h2{font-size:30px} .h-sub{font-size:15px;margin-bottom:20px}
  .h-panel[data-panel=top]{grid-template-columns:1fr 1fr}
  .h-panel.h-lista{grid-template-columns:1fr 1fr;column-gap:0}
@@ -179,8 +183,11 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 <ul class="h-motivos"><li>Artistas que diseñan según tu rostro</li><li>Con hilo: natural e ideal para piel sensible</li><li>Más de 10 años realzando miradas</li></ul>
 <div class="h-datos"><span class="h-g"><b>★ 4,9 a 5,0</b> · 4.731 reseñas en Google</span><span>Desde ₡12.500</span><span>8 sedes</span></div>
 <div class="h-acc"><a class="h-btn h-btn-o" href="#servicios">Reservar cita</a><a class="h-btn h-btn-l" href="https://wa.me/50663389725" target="_blank" rel="noopener">WhatsApp</a></div>
-</div><aside class="h-rapida" aria-label="Reserva rápida"><b>Reserva en dos pasos</b><span>Elige el servicio y después la sede y la hora.</span>
-<div class="h-lista"><button type="button" class="h-fila" data-s="2" data-n="Diseño de cejas" data-p="₡12.500"><span class="h-fila-t"><span>Diseño de cejas</span><i><b>₡12.500</b> · 25 min</i></span><span class="h-fila-a">Reservar</span></button><button type="button" class="h-fila" data-s="3" data-n="Superlaminado de cejas WOW" data-p="₡13.900"><span class="h-fila-t"><span>Superlaminado de cejas WOW</span><i><b>₡13.900</b> · 40 min</i></span><span class="h-fila-a">Reservar</span></button><button type="button" class="h-fila" data-s="4" data-n="Levantamiento de pestañas" data-p="₡19.500"><span class="h-fila-t"><span>Levantamiento de pestañas</span><i><b>₡19.500</b> · 75 min</i></span><span class="h-fila-a">Reservar</span></button><button type="button" class="h-fila" data-s="20" data-n="Labio superior" data-p="₡6.000"><span class="h-fila-t"><span>Labio superior</span><i><b>₡6.000</b> · 5 min</i></span><span class="h-fila-a">Reservar</span></button></div><a class="h-todos" href="#servicios">Ver los 26 servicios con precio →</a></aside></div></div>
+</div><form class="h-rapida" id="rapida" aria-label="Reserva rápida"><b>¿Ya sabes lo que quieres?</b><span>Elige servicio y sede, y ve las horas libres.</span>
+<label>Servicio<select id="r-serv" required><option value="">Elige un servicio</option><optgroup label="Más pedidos"><option value="2">Diseño de cejas · ₡12.500</option><option value="3">Superlaminado de cejas WOW · ₡13.900</option><option value="4">Levantamiento de pestañas · ₡19.500</option><option value="20">Labio superior · ₡6.000</option></optgroup><optgroup label="Cejas"><option value="33">Diseño + realce de color</option><option value="31">Diseño + labio superior</option><option value="17">Realce de color · ₡5.500</option><option value="13">Superlaminado + diseño · ₡26.400</option><option value="12">Superlaminado + diseño + realce · ₡31.900</option></optgroup><optgroup label="Pestañas"><option value="16">Levantamiento + efecto rímel · ₡21.500</option><option value="34">Diseño de cejas + levantamiento</option></optgroup><optgroup label="Depilación facial"><option value="7">Cara completa · ₡21.500</option><option value="27">Perfilado de barba · ₡21.000</option><option value="21">Mano completa · ₡7.000</option><option value="8">Mentón · ₡5.000</option><option value="9">Mejillas · ₡7.000</option><option value="10">Frente · ₡7.000</option><option value="11">Patillas · ₡7.000</option><option value="22">Dedos · ₡4.500</option><option value="26">Cuello · ₡21.000</option><option value="24">Orejas · ₡4.500</option><option value="23">Nariz · ₡8.500</option><option value="25">Entrecejo · ₡5.500</option></optgroup><optgroup label="Paquetes"><option value="28">Glow Up: diseño, laminado y levantamiento · ₡45.900</option></optgroup><optgroup label="Valoración"><option value="14">Valoración de cejas · Gratis</option></optgroup></select></label>
+<label>Sede<select id="r-sede" required><option value="">Elige una sede</option><option value="4">Multiplaza Escazú · Escazú</option><option value="3">Multiplaza Curridabat · Curridabat</option><option value="5">Lincoln Plaza · Moravia</option><option value="1">City Mall · Alajuela</option><option value="2">Paseo Metrópoli · Cartago</option><option value="6">Oxígeno · Heredia</option><option value="7">Plaza 221, Guayabos · Curridabat</option><option value="8">La Sabana · San José</option></select></label>
+<a class="h-btn h-btn-o h-ir" id="r-ir" href="https://samsarahindu.com/agendar-cita/" target="_blank" rel="noopener" aria-disabled="true">Ver horarios libres</a>
+<a class="h-todos" href="https://wa.me/50663389725" target="_blank" rel="noopener">Prefiero escribir por WhatsApp →</a></form></div></div>
 <main>
 <section id="servicios"><div class="h-wrap">
 <h2>¿Qué te quieres hacer?</h2><p class="h-sub">26 servicios con su precio. La sede y la hora las eliges después.</p>
@@ -266,6 +273,11 @@ capa.addEventListener('click',function(e){if(e.target===capa||e.target.classList
 $$('.h-aqui').forEach(function(b){b.addEventListener('click',function(){sede=b.dataset.l;$('#elegida-n').textContent=b.dataset.n;$('#elegida').hidden=false;
  document.getElementById('servicios').scrollIntoView({behavior:'smooth'});});});
 $('#quitar-sede').addEventListener('click',function(){sede=null;$('#elegida').hidden=true;});
+var rs=$('#r-serv'),rl=$('#r-sede'),ri=$('#r-ir');
+function rev(){var ok=rs.value&&rl.value;ri.setAttribute('aria-disabled',ok?'false':'true');
+ ri.textContent=ok?'Ver horarios en '+rl.options[rl.selectedIndex].text.split(' · ')[0]:'Ver horarios libres';}
+rs.addEventListener('change',rev);rl.addEventListener('change',rev);
+$$('.h-aqui').forEach(function(b){b.addEventListener('click',function(){rl.value=b.dataset.l;rev();});});
 var cajon=$('#cajon');$('#abrir-menu').addEventListener('click',function(){cajon.hidden=false;});
 cajon.addEventListener('click',function(e){if(e.target===cajon||e.target.classList.contains('h-cerrar')||e.target.tagName==='A')cajon.hidden=true;});
 })();
