@@ -78,10 +78,10 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 .h-promo small{color:#C9C2B8;font-size:12px}
 .h-porque{background:var(--crema)}
 .h-porque ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:14px}
-.h-porque li{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
-.h-porque li::before{content:"✦";width:36px;height:36px;border-radius:50%;background:var(--tinta);color:var(--oro);display:grid;place-items:center;font-size:16px}
+.h-porque li{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;align-content:start}
+.h-porque .h-ico{width:40px;height:40px;border-radius:50%;background:var(--tinta);color:var(--oro);display:grid;place-items:center}
 .h-porque li b{display:block}
-.h-porque li span{color:var(--suave);font-size:14px}
+.h-porque li div span{color:var(--suave);font-size:14px}
 .h-gal{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
 .h-gal figure{margin:0;flex:0 0 44%;max-width:200px;scroll-snap-align:start}
 .h-gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
@@ -160,7 +160,7 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
  .h-panel.h-lista{grid-template-columns:1fr 1fr;column-gap:0}
  .h-panel.h-lista .h-fila:nth-child(2){border-top:0} .h-panel.h-lista .h-fila:nth-child(odd){border-right:1px solid var(--linea)}
  .h-promo{grid-template-columns:1fr auto;align-items:center;padding:28px 32px} .h-promo>*{grid-column:1} .h-promo .h-pre{grid-column:2;grid-row:2 / span 2;font-size:40px}
- .h-porque ul{grid-template-columns:repeat(4,1fr);gap:28px} .h-porque li{grid-template-columns:1fr;gap:12px}
+ .h-porque ul{grid-template-columns:repeat(4,1fr);gap:28px} .h-porque li{grid-template-columns:1fr;gap:14px} .h-porque li b{min-height:2.6em}
  .h-gal{display:grid;grid-template-columns:repeat(8,1fr);overflow:visible} .h-gal figure{max-width:none}
  .h-resenas{grid-template-columns:repeat(3,1fr)}
  .h-sedes ul{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
@@ -211,10 +211,10 @@ h2{font-size:21px;line-height:1.2;margin:0 0 4px;font-weight:800;text-wrap:balan
 </div></div></section>
 <section class="h-porque"><div class="h-wrap">
 <h2>Por qué Samsara</h2>
-<ul><li><div><b>Artistas que diseñan, no depilan</b><span>No cualquiera toca tus cejas: solo manos expertas, formadas por Samsara.</span></div></li>
-<li><div><b>Visagismo en el diseño</b><span>Primero se estudia tu rostro y después se diseña la forma de cejas que te favorece.</span></div></li>
-<li><div><b>Depilación con hilo</b><span>Una técnica natural que retira el vello desde la raíz, ideal para pieles sensibles.</span></div></li>
-<li><div><b>Más de 10 años</b><span>Realzando la belleza natural de miles de mujeres.</span></div></li></ul>
+<ul><li><span class="h-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.5 4.5l4 4L9 19H5v-4z"/><path d="M13.5 6.5l4 4"/></svg></span><div><b>Artistas que diseñan, no depilan</b><span>No cualquiera toca tus cejas: solo manos expertas, formadas por Samsara.</span></div></li>
+<li><span class="h-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="12.5" rx="7" ry="8.5"/><path d="M8 10.2q1.6-1.4 3.2 0M12.8 10.2q1.6-1.4 3.2 0"/><path d="M9.5 16q2.5 1.6 5 0"/></svg></span><div><b>Visagismo en el diseño</b><span>Primero se estudia tu rostro y después se diseña la forma de cejas que te favorece.</span></div></li>
+<li><span class="h-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c2.5-5 5.5-5 8 0s5.5 5 8 0"/><circle cx="3" cy="15" r="1.2"/><circle cx="21" cy="15" r="1.2"/><path d="M7 9l10 0"/></svg></span><div><b>Depilación con hilo</b><span>Una técnica natural que retira el vello desde la raíz, ideal para pieles sensibles.</span></div></li>
+<li><span class="h-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.8 12.8L7.5 21l4.5-2.6 4.5 2.6-1.3-8.2"/></svg></span><div><b>Más de 10 años</b><span>Realzando la belleza natural de miles de mujeres.</span></div></li></ul>
 <a class="h-mas" href="#servicios">Reservar mi cita →</a>
 </div></section>
 <section id="resultados"><div class="h-wrap">
