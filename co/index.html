@@ -28,11 +28,14 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .h-franja{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--oro);color:var(--tinta);text-decoration:none;font-size:13.5px;font-weight:700;padding:9px max(16px,env(safe-area-inset-right,0px)) 9px max(16px,env(safe-area-inset-left,0px))}
 .h-franja s{color:rgba(22,22,29,.62);font-weight:500}
 .h-fr-pill{display:inline-flex;align-items:center;gap:5px;margin-right:8px;padding:3px 9px 3px 7px;border-radius:999px;background:var(--tinta);color:var(--oro);font-style:normal;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;vertical-align:1px}
-.h-fr-pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--oro);animation:h-pulso 1.6s ease-in-out infinite}
-.h-fr-pill.h-hoy{background:#B3261E;color:#fff} .h-fr-pill.h-hoy::before{background:#fff}
+.h-fr-pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#2EE66B;animation:h-anillo 1.6s ease-out infinite}
+.h-fr-pill.h-hoy{background:#B3261E;color:#fff} .h-fr-pill.h-hoy::before{background:#fff;animation-name:h-anillo-b}
 .h-cuando{display:flex;align-items:flex-start;gap:8px;font-weight:700;font-size:14.5px;color:var(--oro)}
-.h-punto{flex:none;margin-top:7px;width:9px;height:9px;border-radius:50%;background:var(--oro);animation:h-pulso 1.6s ease-in-out infinite}
-@keyframes h-pulso{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+.h-punto{flex:none;margin-top:6px;width:11px;height:11px;border-radius:50%;background:#2EE66B;animation:h-anillo 1.6s ease-out infinite}
+.h-es-hoy .h-punto{background:#FF4D4D;animation-name:h-anillo-r}
+@keyframes h-anillo{0%{box-shadow:0 0 0 0 rgba(46,230,107,.75)}70%{box-shadow:0 0 0 9px rgba(46,230,107,0)}100%{box-shadow:0 0 0 0 rgba(46,230,107,0)}}
+@keyframes h-anillo-r{0%{box-shadow:0 0 0 0 rgba(255,77,77,.75)}70%{box-shadow:0 0 0 9px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
+@keyframes h-anillo-b{0%{box-shadow:0 0 0 0 rgba(255,255,255,.8)}70%{box-shadow:0 0 0 7px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
 @media (prefers-reduced-motion:reduce){.h-fr-pill::before,.h-punto{animation:none}}
 .h-franja>span:last-child{font-weight:800;white-space:nowrap;background:var(--tinta);color:var(--oro);border-radius:999px;padding:6px 12px;font-size:12.5px}
 .h-hero{background:var(--tinta);color:#fff;position:relative;overflow:hidden}
