@@ -13,7 +13,7 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 /* Blindaje contra los estilos del sitio (Elementor y el tema) cuando va dentro de WordPress. */
-body{font-weight:400!important;letter-spacing:normal}
+body{font-weight:400!important;letter-spacing:normal;background:var(--blanco)!important}
 h1,h2,h3,h4{font-family:Montserrat,'Helvetica Neue',Arial,sans-serif!important;text-transform:none}
 b,strong{font-weight:700!important}
 .h-res blockquote{font-weight:400!important;color:var(--tinta)!important;line-height:1.45!important;font-style:normal;border:0;padding:0;background:none}
@@ -455,11 +455,11 @@ var MEDIR=[['.h-cab .h-btn','reservar_cabecera','cabecera'],['.h-franja','promo_
 ['.h-sede','hoja_elegir_sede','hoja'],['#hoja-ir','hoja_ver_horarios','hoja'],['.sm-faq-i summary','faq_pregunta','faq'],['.h-faq-cta a','cierre_faq','faq'],
 ['#barra .h-btn-o','reservar_barra','barra'],['#barra .h-wa-c','whatsapp_barra','barra'],['.h-pie a','enlace_pie','pie'],['.h-cajon a','enlace_menu','menu'],
 ['a','enlace_otro','otra'],['button','boton_otro','otra']];
-window.dataLayer=window.dataLayer||[];
+var CAPA_H=window['smEmbudoQ']=window['smEmbudoQ']||[];
 document.addEventListener('click',function(e){var t=e.target;if(!t.closest){return;}
  for(var i=0;i!==MEDIR.length;i++){var n=t.closest(MEDIR[i][0]);if(!n){continue;}
   var txt=String(n.getAttribute('data-n')||n.getAttribute('aria-label')||n.textContent||'').replace(/\s+/g,' ').trim().slice(0,60);
-  window.dataLayer.push({event:'home_clic',boton_id:MEDIR[i][1],boton_zona:MEDIR[i][2],boton_texto:txt,home_pagina:location.pathname});return;}},true);
+  CAPA_H.push({event:'home_clic',boton_id:MEDIR[i][1],boton_zona:MEDIR[i][2],boton_texto:txt,home_pagina:location.pathname});return;}},true);
 var cajon=$('#cajon');$('#abrir-menu').addEventListener('click',function(){cajon.hidden=false;});
 cajon.addEventListener('click',function(e){if(e.target===cajon||e.target.classList.contains('h-cerrar')||e.target.tagName==='A')cajon.hidden=true;});
 })();
